@@ -1,0 +1,21 @@
+{
+  "name": "angular-yelp-example",
+  "description": "Angular Yelp Example",
+  "version": "0.0.0",
+  "authors": [
+    ""
+  ],
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {}
+}
