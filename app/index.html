@@ -16,7 +16,7 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <h3 class="text-muted">jetfire</h3>
+        <h3 class="text-muted">Angular Yelp Example</h3>
       </div>
 
       <div class="jumbotron">
@@ -31,6 +31,28 @@
           <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
           <h4>Bootstrap</h4>
           <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <h1>Hello, {{city}}!</h1>
+          <form ng-submit="getWeather()" role="form">
+            <input type="text" ng-model="city" placeholder="Enter a city..."> <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <h2 ng-show="weather">The temperature in {{weather.city.name}} is {{weather.list[0].temp.day}}&deg;</h2>
+        </div>
+        <div class="col-md-8">
+        <h1>Local Businesses:</h1>
+          <input type="text" ng-model="search.name" placeholder="Filter list by name...">
+          <button ng-click="predicate='name'" class="btn btn-default">Name</button>
+          <button ng-click="predicate='avg_rating'" class="btn btn-default">Rating</button>
+          <button ng-click="reverse=!reverse" class="btn btn-default">+/-</button>
+          <ul>
+            <li ng-repeat="biz in nearby | filter:search | orderBy:predicate:reverse">
+              {{biz.name}}
+              <div ng-bind="biz.avg_rating"></div>
+              <img ng-src="{{biz.photo_url}}">
+            </li>
+          </ul>
+          <pre>{{nearby || json}}</pre>
         </div>
       </div>
 
