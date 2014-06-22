@@ -1,11 +1,11 @@
 {
   "name": "angular-yelp-example",
   "description": "Angular Yelp Example",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "authors": [
-    ""
+    "Dane Petersen"
   ],
-  "license": "",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",

@@ -1,12 +1,12 @@
 {
   "name": "angular-yelp-example",
   "description": "Angular Yelp Example",
-  "version": "0.0.0",
-  "author": "",
+  "version": "0.1.0",
+  "author": "Dane Petersen",
   "licenses": [
     {
-      "type": "",
-      "url": ""
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
     }
   ],
   "repository": {
