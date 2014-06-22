@@ -2,14 +2,14 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>jetfire</title>
+    <title>Angular Yelp Example</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
-    <div class="container">
+  <body ng-app="yelpApp">
+    <div class="container" ng-controller="HomeController">
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Home</a></li>
@@ -40,8 +40,7 @@
 
     </div>
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
     <script src="scripts/app.js"></script>
 </body>
 </html>
